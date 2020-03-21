@@ -1,0 +1,273 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    
+}
+body{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1920px;
+}
+
+nav{
+    background-color: #101010;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation{
+    margin: auto;
+}
+
+.logo{
+    background-color: #FFE600;
+    color: #111111;
+}
+
+/* Section-1 */
+
+.section-1{
+    background-color: #101010;
+    height: 550px;
+    margin-bottom: 3em;
+}
+
+.section-bod{
+    position: relative;
+    margin-left: 3em;
+    top: 9em;
+
+    
+}
+
+.section-1-head{
+    width: 300px;
+    margin-top: 2em;
+    font-size: 24px;
+}
+
+
+.mission{
+    color: #FFE600;
+}
+
+.section-1-head, .section-1-body{
+    width: 300px;
+}
+
+
+
+.section-1-body{
+    font-size: 18px;
+ 
+}
+
+.section-1-btn{
+    margin-top: 2em;
+    padding: 1.5em 5em;
+    background-color: #FFE600;
+    border: none;
+}
+
+.btn-link{
+    color: #111111;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Section-2 */
+
+.section-2{
+    background-color: #ffffff;
+    color: #111111;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.section-2-head:after{
+    content:' ';
+    position: relative;
+    display:block;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    border: 2px solid #FFE600;
+    border-radius:4px;
+}
+
+
+.section-2-panel{
+    width: 350px;
+    margin: auto;
+}
+
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 4em 7em;
+    background-color: #EBEBEB;
+    color:#000000;
+}
+
+
+.social {
+    order: 0;
+    font-size: 27px;
+}
+
+.copyright, .footer-head{
+    opacity: 0.2;
+}
+
+.footer-body{
+    opacity: 0.4;
+}
+
+.and{
+    font-weight: normal;
+}
+
+.copyright{
+    position: relative;
+    top: 2em;
+}
+
+
+
+@media (min-width: 900px){
+    nav{
+        background-color: #101010;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+
+    .section-1{
+        background-image: url("../img/hero-bg.jpg");
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        position: relative;
+        bottom: 3em;
+    }
+    
+    .section-bod{
+        position: relative;
+        width: 590px;
+        margin-left: 5em;
+        top: 9em;
+    
+        
+    }
+    
+    .section-1-head{
+        margin-top: 2em;
+        font-size: 24px;
+    }
+    
+    
+    .mission{
+        color: #FFE600;
+    }
+    
+    .section-1-body{
+        font-size: 18px;
+    }
+    
+    .section-1-btn{
+        padding: 1.5em 5em;
+        background-color: #FFE600;
+        border: none;
+    }
+    
+    .btn-link{
+        color: #111111;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .section-2{
+        background-color: #ffffff;
+        color: #111111;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 3em 0;
+    }
+    
+    .section-2-head{
+        margin-bottom: 0;
+       
+    }
+    
+    .section-2-head:after{
+        content:' ';
+        position: relative;
+        display:block;
+        width: 50px;
+        margin: 0 auto;
+        margin-top: 0.5em;
+        border: 2px solid #FFE600;
+        border-radius:4px;
+    }
+    
+    
+    .section-2-panel{
+        text-align: center;
+        width: 285px;
+    }
+    
+    
+    footer{
+        padding: 4em 7em;
+        background-color: #EBEBEB;
+        color:#000000;
+    }
+    
+    .footer-body{
+        width: 600px;
+        margin: 0;
+    }
+    
+    .footer-head{
+        margin: 0;
+        order: 1
+    }
+    
+    .footer-1{
+        display: flex;
+        justify-content: space-between;
+        margin: auto 0;
+
+    }
+    
+    .social {
+        font-size: 27px;
+        order: 2
+    }
+    
+    .copyright, .footer-head{
+        opacity: 0.2;
+    }
+    
+    .footer-body{
+        opacity: 0.4;
+        text-align: left;
+       
+    }
+    
+    .and{
+        font-weight: normal;
+    }
+    
+    .copyright{
+        text-align: left;
+    }
+    
+}
