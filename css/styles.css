@@ -144,7 +144,24 @@ footer{
         justify-content: space-between;
     }
     
+    .navigation{
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto 0;
+        
+    }
+    .nav-link {
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+    }
     
+    .nav-link:focus {
+        border-bottom: 2px solid #FFE600;
+        font-weight: bold;
+        text-decoration: none;
+    }
 
     .section-1{
         background-image: url("../img/hero-bg.jpg");
