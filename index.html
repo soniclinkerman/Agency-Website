@@ -13,21 +13,24 @@
     </head>
     <body>
 
-        <!-- <header class="header main-grid">   
+        <header class="header header-home main-grid">  
+
             <div class="header-content">
                 <a class="logo-link">
                     <img src="img/logo.png" class="logo"/>
                 </a>   
-                
+                <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+
                 <nav class="nav">
-                    <ul>
+                    <button aria-label="Close navigation" class="close-nav">&times;</button>
+                    <ul class= "nav-list">
                         <li class="nav-item"> <a class="nav-link active" href="#">home</a></li>
                         <li class="nav-item"> <a class="nav-link" href="#">about us</a></li>
                         <li class="nav-item"> <a class="nav-link" href="#">contact</a></li>
                     </ul>
                 </nav>
             </div>
-    </header> -->
+    </header>
 
     <main>
         <section class="hero main-grid">
@@ -55,7 +58,7 @@
                 <h2 class="section-title section-title-center">About us</h2>
 
                 <p>We grew up in downtown Chicago, and we used to play in a band. 
-                    Jake loves fried chicken, and Elwood loves dry white toast. 
+                    <strong>Jake loves fried chicken,</strong> and <strong>Elwood loves dry white toast. </strong>
                 </p>
 
             </div>
@@ -63,7 +66,7 @@
             <div class="col">
                 <h2 class="section-title section-title-center">Our skills</h2>
 
-                <p>Elwood is an expert in SEO, SEM, and driving from the police. 
+                <p>Elwood is an expert in <strong>SEO, SEM, and driving from the police.</strong> 
                     Jake is our social media specialist, and he has an amazing voice.
                 </p>
 
@@ -71,17 +74,16 @@
 
             <div class="col">
                 <h3 class="section-title section-title-center">Get in touch</h3>
-                <p>Send us an email with some info about what help you need and we’ll
-                    drive over to your place in our Bluesmobile the following day to discuss the deal.</p>
+                <p>Send us an email with some info about what help you need and <strong> we’ll
+                    drive over to your place</strong> in our Bluesmobile the following day to discuss the deal.</p>
             </div>
         </section>
-        <script src="" async defer></script>
     </main>
 
     <footer class="footer main-grid">
 
         <div class="footer-main">
-            <img src="img/logo.png" class="footer-logo"/>
+            <h1 class="logo-text">Jake<span class="and">&</span>Elwood</h1>
             <p class="footer-text">
                 Two brothers from Chicago that are just trying to pay back their
                  debt by helping others with their SEO, SEM, and Content Marketing
@@ -91,10 +93,11 @@
         </div>
 
             <ul class="social-list">
-               <li class="social-item"> <i class="fab fa-facebook-square"></i></li>
-               <li class="social-item"> <i class="fab fa-twitter-square"></i></li>
-                <li class="social-item"><i class="fab fa-instagram-square"></i></li>
+               <li class="social-item"> <a class="social-link"><i class="fab fa-facebook-square"></i></a></li>
+               <li class="social-item"> <a class="social-link"><i class="fab fa-twitter-square"></i></a></li>
+                <li class="social-item"><a class="social-link"><i class="fab fa-instagram-square"></i></a></li>
             </ul>
         </footer>
+        <script src="script.js" async defer></script>
     </body>
 </html>
