@@ -1,15 +1,134 @@
-html, body{
-    height: 100%;
-    margin: 0;
-    
-}
+* {box-sizing: border-box;}
+
 body{
-    color: #ffffff;
+    margin: 0;
+    color: #404040;
     font-family: 'Montserrat', sans-serif;
     max-width: 1920px;
+    line-height: 1.6;
 }
 
-nav{
+/* ==================
+    Typography
+===================== */
+
+h1, h2, strong{
+    font-weight: 700;
+}
+
+.hero-title{
+    /* 24px */
+    font-size: 1.5rem; 
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.subtitle{
+    font-size: 1rem;
+}
+
+.accent-color{
+    color: #FFE600;
+}
+
+/* ==================
+    Button
+===================== */
+
+.btn {
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: .5em 2em;
+    border: none;
+    margin-top: .5em;
+}
+
+.btn-primary{
+    background-color: #FFE600;
+    color: #000000;
+    justify-self: start;
+}
+
+.section-title{
+    font-size: 1.125rem;
+    color: #000000;
+    margin-top: 1.5rem;
+}
+
+/* ==================
+    General layout
+===================== */
+
+.main-grid{
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px)  minmax(1em, 1fr);
+
+}
+
+/* ==================
+    Hero area
+===================== */
+.hero{
+    background-image: url("../img/hero-bg.jpg");
+    color: #fff;
+    padding: 2em;
+}
+
+.hero > * {
+    grid-column: 2 / -2;
+}
+
+/* ==================
+    Info area
+===================== */
+
+.info{
+    padding:  4em 0;
+}
+
+.col {
+    grid-column:  2 / -2;
+    text-align: center;
+}
+
+/* ==================
+    Footer
+===================== */
+
+.footer{
+    background-color: #ebebeb;;
+    padding: 4em 0;
+    text-align: center;
+}
+
+.footer-main,
+.social-list{
+    grid-column: 2 /-2;
+}
+
+.social-list{
+    font-size: 27px;
+    order: -1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.social-item{
+    margin: 0.3em;
+}
+
+.footer-text {
+    opacity: 0.4;
+    
+}
+
+.copyright{
+    opacity: 0.3;
+}
+
+/* nav{
     background-color: #101010;
     display: flex;
     justify-content: space-around;
@@ -22,118 +141,17 @@ nav{
 .logo{
     background-color: #FFE600;
     color: #111111;
-}
-
-/* Section-1 */
-
-.section-1{
-    background-color: #101010;
-    height: 550px;
-    margin-bottom: 3em;
-}
-
-.section-bod{
-    position: relative;
-    margin-left: 3em;
-    top: 9em;
-
-    
-}
-
-.section-1-head{
-    width: 300px;
-    margin-top: 2em;
-    font-size: 24px;
-}
-
-
-.mission{
-    color: #FFE600;
-}
-
-.section-1-head, .section-1-body{
-    width: 300px;
-}
+} */
 
 
 
-.section-1-body{
-    font-size: 18px;
- 
-}
-
-.section-1-btn{
-    margin-top: 2em;
-    padding: 1.5em 5em;
-    background-color: #FFE600;
-    border: none;
-}
-
-.btn-link{
-    color: #111111;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 
-/* Section-2 */
-
-.section-2{
-    background-color: #ffffff;
-    color: #111111;
-    text-align: center;
-    margin-bottom: 5em;
-}
-
-.section-2-head:after{
-    content:' ';
-    position: relative;
-    display:block;
-    width: 50px;
-    margin: 0 auto;
-    margin-top: 0.5em;
-    border: 2px solid #FFE600;
-    border-radius:4px;
-}
 
 
-.section-2-panel{
-    width: 350px;
-    margin: auto;
-}
 
 
-/* Footer */
-footer{
-    text-align: center;
-    padding: 4em 7em;
-    background-color: #EBEBEB;
-    color:#000000;
-}
 
-
-.social {
-    order: 0;
-    font-size: 27px;
-}
-
-.copyright, .footer-head{
-    opacity: 0.2;
-}
-
-.footer-body{
-    opacity: 0.4;
-}
-
-.and{
-    font-weight: normal;
-}
-
-.copyright{
-    position: relative;
-    top: 2em;
-}
 
 
 
@@ -163,52 +181,7 @@ footer{
         text-decoration: none;
     }
 
-    .section-1{
-        background-image: url("../img/hero-bg.jpg");
-        position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 700px;
-        position: relative;
-        bottom: 3em;
-    }
     
-    .section-bod{
-        position: relative;
-        width: 590px;
-        margin-left: 5em;
-        top: 9em;
-    
-        
-    }
-    
-    .section-1-head{
-        margin-top: 2em;
-        font-size: 24px;
-    }
-    
-    
-    .mission{
-        color: #FFE600;
-    }
-    
-    .section-1-body{
-        font-size: 18px;
-    }
-    
-    .section-1-btn{
-        padding: 1.5em 5em;
-        background-color: #FFE600;
-        border: none;
-    }
-    
-    .btn-link{
-        color: #111111;
-        font-size: 14px;
-        font-weight: bold;
-        text-decoration: none;
-    }
     
     .section-2{
         background-color: #ffffff;
@@ -269,12 +242,9 @@ footer{
         order: 2
     }
     
-    .copyright, .footer-head{
-        opacity: 0.2;
-    }
     
     .footer-body{
-        opacity: 0.4;
+  
         text-align: left;
        
     }
@@ -287,4 +257,4 @@ footer{
         text-align: left;
     }
     
-}
+} */
